@@ -1,0 +1,83 @@
+# Parámetros de cómputo anual para cálculo de bases de cotización
+# Formato: año como clave principal, con parámetros anidados
+# - bases_incluidas: Número de bases a incluir en el cálculo
+# - periodo_meses: Período total en meses para el cómputo
+# - divisor_base_reguladora: Divisor para calcular la base reguladora
+
+parametros_computo_anual:
+  # 2025
+  2025:
+    bases_incluidas: 300
+    periodo_meses: 300
+    divisor_base_reguladora: 350
+  # 2026
+  2026:
+    bases_incluidas: 302
+    periodo_meses: 304
+    divisor_base_reguladora: 352.33
+
+  # 2027
+  2027:
+    bases_incluidas: 304
+    periodo_meses: 308
+    divisor_base_reguladora: 354.67
+
+  # 2028
+  2028:
+    bases_incluidas: 306
+    periodo_meses: 312
+    divisor_base_reguladora: 357.00
+
+  # 2029
+  2029:
+    bases_incluidas: 308
+    periodo_meses: 316
+    divisor_base_reguladora: 359.33
+
+  # 2030
+  2030:
+    bases_incluidas: 310
+    periodo_meses: 320
+    divisor_base_reguladora: 361.67
+
+  # 2031
+  2031:
+    bases_incluidas: 312
+    periodo_meses: 324
+    divisor_base_reguladora: 364.00
+
+  # 2032
+  2032:
+    bases_incluidas: 314
+    periodo_meses: 328
+    divisor_base_reguladora: 366.33
+
+  # 2033
+  2033:
+    bases_incluidas: 316
+    periodo_meses: 332
+    divisor_base_reguladora: 368.67
+
+  # 2034
+  2034:
+    bases_incluidas: 318
+    periodo_meses: 336
+    divisor_base_reguladora: 371.00
+
+  # 2035
+  2035:
+    bases_incluidas: 320
+    periodo_meses: 340
+    divisor_base_reguladora: 373.33
+
+  # 2036
+  2036:
+    bases_incluidas: 322
+    periodo_meses: 344
+    divisor_base_reguladora: 375.67
+    
+  # 2037
+  2037:
+    bases_incluidas: 324
+    periodo_meses: 348
+    divisor_base_reguladora: 378.00 

@@ -1,0 +1,27 @@
+# Dependencias de producción para API Bases de Cotización
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-core==2.14.1
+
+# Procesamiento de PDFs
+pdfplumber==0.11.7
+pdfminer-six==20250506
+pypdf2==3.0.1
+
+# Análisis de datos
+pandas==2.3.0
+numpy==1.26.4
+
+# Configuración
+PyYAML==6.0.1
+python-dateutil==2.8.2
+python-dotenv==1.1.1
+
+# HTTP requests
+requests==2.31.0
+
+# Utilidades
+pathlib2==2.3.7 

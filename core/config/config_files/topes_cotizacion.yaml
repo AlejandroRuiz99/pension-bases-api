@@ -1,0 +1,82 @@
+# Topes de cotización históricos para pluriactividad
+# Bases mínimas y máximas mensuales por año
+
+topes_cotizacion:
+  2025:
+    base_minima_mensual: 1323.0
+    base_maxima_mensual: 4720.50
+  2024:
+    base_minima_mensual: 1323.0
+    base_maxima_mensual: 4720.50
+  2023:
+    base_minima_mensual: 1260.0
+    base_maxima_mensual: 4495.50
+  2022:
+    base_minima_mensual: 1166.70
+    base_maxima_mensual: 4139.40
+  2021:
+    base_minima_mensual: 1108.33
+    base_maxima_mensual: 4070.10
+  2020:
+    base_minima_mensual: 1050.0
+    base_maxima_mensual: 4070.10
+  2019:
+    base_minima_mensual: 1050.0
+    base_maxima_mensual: 4070.10
+  2018:
+    base_minima_mensual: 1015.83
+    base_maxima_mensual: 3751.20
+  2017:
+    base_minima_mensual: 884.40
+    base_maxima_mensual: 3642.0
+  2016:
+    base_minima_mensual: 858.60
+    base_maxima_mensual: 3597.0
+  2015:
+    base_minima_mensual: 756.0
+    base_maxima_mensual: 3597.0
+  2014:
+    base_minima_mensual: 756.0
+    base_maxima_mensual: 3597.0
+  2013:
+    base_minima_mensual: 756.0
+    base_maxima_mensual: 3597.0
+  2012:
+    base_minima_mensual: 748.20
+    base_maxima_mensual: 3597.0
+  2011:
+    base_minima_mensual: 748.20
+    base_maxima_mensual: 3425.70
+  2010:
+    base_minima_mensual: 739.20
+    base_maxima_mensual: 3230.10
+  2009:
+    base_minima_mensual: 739.20
+    base_maxima_mensual: 3166.20
+  2008:
+    base_minima_mensual: 598.50
+    base_maxima_mensual: 3074.10
+  2007:
+    base_minima_mensual: 570.60
+    base_maxima_mensual: 2813.40
+  2006:
+    base_minima_mensual: 540.90
+    base_maxima_mensual: 2652.0
+  2005:
+    base_minima_mensual: 526.50
+    base_maxima_mensual: 2621.40
+  2004:
+    base_minima_mensual: 511.50
+    base_maxima_mensual: 2560.80
+  2003:
+    base_minima_mensual: 498.0
+    base_maxima_mensual: 2496.0
+  2002:
+    base_minima_mensual: 481.20
+    base_maxima_mensual: 2406.0
+  2001:
+    base_minima_mensual: 463.20
+    base_maxima_mensual: 2316.0
+  2000:
+    base_minima_mensual: 448.20
+    base_maxima_mensual: 2241.0 

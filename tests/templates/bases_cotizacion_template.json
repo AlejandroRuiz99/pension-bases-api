@@ -1,0 +1,10 @@
+{
+    "bases": [
+        {
+            "mes_anyo": "01/2025",
+            "base": 133.42,
+            "empresa": "Prueba",
+            "regimen": "GENERAL"
+        }
+    ]
+}
