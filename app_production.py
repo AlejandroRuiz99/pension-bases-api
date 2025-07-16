@@ -56,21 +56,20 @@ app = FastAPI(
 
 # Configurar CORS para producción
 allowed_origins = [
-    "https://tu-frontend.vercel.app",  # Reemplazar con tu dominio
-    "https://tu-dominio.com",
+    "https://pension-bases-api-e707c1384c99.herokuapp.com",  # Tu app de Heroku
     "http://localhost:3000",  # Para desarrollo local
-    "http://localhost:8080",
+    "http://localhost:8080",  # Para desarrollo local
+    "http://localhost:8000",  # Para desarrollo local
 ]
 
-# En desarrollo, permitir todos los orígenes
-if os.getenv("ENVIRONMENT") == "development":
-    allowed_origins = ["*"]
+# Por ahora, permitir todos los orígenes para facilitar testing
+allowed_origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
