@@ -48,8 +48,9 @@ class SimuladorPeriodos:
         
         # Cargar configuraciones (antes de procesar bases para pluriactividad)
         self.parametros_computo = config.cargar_parametros_computo()
-        self.indices_revalorizacion = config.cargar_indices_revalorizacion()
+        self.indices_revalorizacion = config.cargar_indices_revalorizacion()  # DEPRECATED: Solo para compatibilidad
         self.topes_cotizacion = config.cargar_topes_cotizacion()
+        self.ipc_anual = config.cargar_ipc_anual()  # Nuevo: IPCs anuales para cálculo dinámico
         
         # Procesar fecha de jubilación
         self.fecha_jubilacion = self._procesar_fecha_jubilacion(fecha_jubilacion)
@@ -496,9 +497,130 @@ class SimuladorPeriodos:
             
         return bases_con_periodo
         
+    def _proyectar_ipc_futuro(self, año: int) -> float:
+        """
+        Proyecta el IPC para años futuros usando promedio histórico.
+        
+        Args:
+            año: Año para el que proyectar el IPC
+            
+        Returns:
+            float: IPC proyectado para el año
+        """
+        # Usar promedio de los últimos 10 años disponibles
+        años_disponibles = [a for a in self.ipc_anual.keys() if a <= 2025]
+        if len(años_disponibles) >= 10:
+            ultimos_años = sorted(años_disponibles)[-10:]
+            promedio = sum(self.ipc_anual[a] for a in ultimos_años) / len(ultimos_años)
+            return round(promedio, 2)
+        else:
+            # Si no hay suficientes datos, usar promedio de todos los disponibles
+            if len(self.ipc_anual) > 0:
+                return round(sum(self.ipc_anual.values()) / len(self.ipc_anual), 2)
+            else:
+                # Fallback si no hay datos: usar objetivo BCE del 2%
+                return 2.0
+
+    def _calcular_indice_revalorizacion_ipc(self, año_base: int, mes_base: int = 1) -> float:
+        """
+        Calcula el índice de revalorización acumulado desde el mes/año de la base
+        hasta 24 meses antes de la fecha de jubilación, según normativa española (LGSS).
+        
+        Método mejorado con precisión mensual:
+        - Se aplica el IPC acumulativo mes a mes desde el mes siguiente al de cotización
+        - hasta 24 meses antes de la fecha de jubilación
+        - Distribuye el IPC anual uniformemente en 12 meses para mayor precisión
+        - Fórmula: Índice = Π(1 + IPC_mensual/100) para cada mes en el período
+        
+        Args:
+            año_base: Año de la base de cotización original
+            mes_base: Mes de la base de cotización (1-12), por defecto 1
+            
+        Returns:
+            float: Índice de revalorización acumulado
+        """
+        # Fecha de la base de cotización
+        fecha_base = datetime(año_base, mes_base, 1)
+        
+        # Fecha de inicio de revalorización (mes siguiente)
+        fecha_inicio = fecha_base + relativedelta(months=1)
+        
+        # Fecha límite de revalorización (24 meses antes de jubilación)
+        fecha_limite = self.fecha_jubilacion - relativedelta(months=24)
+        
+        # Si la fecha de inicio es posterior al límite, no hay revalorización
+        if fecha_inicio >= fecha_limite:
+            return 1.0
+        
+        # Calcular índice acumulativo mes a mes
+        indice_acumulado = 1.0
+        fecha_actual = fecha_inicio
+        
+        while fecha_actual < fecha_limite:
+            año_actual = fecha_actual.year
+            
+            if año_actual in self.ipc_anual:
+                ipc_anual_valor = self.ipc_anual[año_actual]
+                # Distribuir el IPC anual uniformemente en 12 meses
+                factor_anual = 1 + (ipc_anual_valor / 100)
+                factor_mensual = factor_anual ** (1/12)
+                indice_acumulado *= factor_mensual
+            else:
+                # Proyectar IPC para años futuros
+                ipc_proyectado = self._proyectar_ipc_futuro(año_actual)
+                factor_anual = 1 + (ipc_proyectado / 100)
+                factor_mensual = factor_anual ** (1/12)
+                indice_acumulado *= factor_mensual
+            
+            # Avanzar al siguiente mes
+            fecha_actual += relativedelta(months=1)
+        
+        return indice_acumulado
+    
+    def obtener_informacion_proyecciones(self, año_base_min: int, año_jubilacion: int) -> Dict:
+        """
+        Obtiene información detallada sobre las proyecciones de IPC necesarias.
+        
+        Args:
+            año_base_min: Año mínimo de las bases de cotización
+            año_jubilacion: Año de jubilación
+            
+        Returns:
+            Dict con información sobre proyecciones necesarias
+        """
+        año_limite = año_jubilacion - 2
+        años_necesarios = set()
+        
+        # Identificar años que necesitan proyección
+        for año_base in range(año_base_min, año_jubilacion):
+            for año_ipc in range(año_base + 1, año_limite + 1):
+                if año_ipc not in self.ipc_anual:
+                    años_necesarios.add(año_ipc)
+        
+        proyecciones = {}
+        for año in sorted(años_necesarios):
+            ipc_proyectado = self._proyectar_ipc_futuro(año)
+            proyecciones[año] = {
+                "ipc_porcentaje": ipc_proyectado,
+                "metodo": "promedio_historico",
+                "es_proyeccion": True
+            }
+        
+        return {
+            "años_proyectados": sorted(años_necesarios),
+            "proyecciones": proyecciones,
+            "metodo_utilizado": "promedio_historico",
+            "total_años_proyectados": len(años_necesarios)
+        }
+    
     def revalorizar_bases(self, bases_con_periodo: List[Dict]) -> List[Dict]:
         """
         Revaloriza las bases que tienen el atributo periodo: 'revalorizado'.
+        
+        MÉTODO CORREGIDO según normativa española:
+        - Bases de últimos 24 meses: NO se revalorizan (periodo='no_revalorizado')
+        - Bases anteriores: Se revalorizan aplicando IPC acumulado desde año de cotización
+          hasta dos años antes del año de jubilación
         
         Args:
             bases_con_periodo: Lista de bases con el atributo periodo
@@ -512,17 +634,19 @@ class SimuladorPeriodos:
             base_procesada = base_dict.copy()
             
             if base_dict["periodo"] == "revalorizado":
-                mes_anyo = base_dict["mes_anyo"]
+                # Obtener año de la base
+                fecha_base = datetime.strptime(base_dict["mes_anyo"], "%m/%Y")
+                año_base = fecha_base.year
                 
-                if mes_anyo in self.indices_revalorizacion:
-                    indice = self.indices_revalorizacion[mes_anyo]
-                    base_procesada["base"] = round(base_dict["base"] * indice, 2)
-                    base_procesada["base_original"] = base_dict["base"]
-                    base_procesada["indice_revalorizacion"] = indice
-                else:
-                    # Si no hay índice disponible, mantener base original
-                    base_procesada["base_original"] = base_dict["base"]
-                    base_procesada["indice_revalorizacion"] = 1.0
+                # Calcular índice dinámicamente basado en IPC acumulado
+                indice = self._calcular_indice_revalorizacion_ipc(año_base)
+                
+                # Aplicar revalorización
+                base_procesada["base"] = round(base_dict["base"] * indice, 2)
+                base_procesada["base_original"] = base_dict["base"]
+                base_procesada["indice_revalorizacion"] = round(indice, 7)
+                base_procesada["metodo_revalorizacion"] = "IPC_ACUMULADO"
+                base_procesada["año_base"] = año_base
                     
             bases_revalorizadas.append(base_procesada)
             

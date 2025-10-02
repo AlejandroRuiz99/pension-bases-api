@@ -25,13 +25,15 @@ class ConfigManager:
             self._cache['parametros_computo'] = self._cargar_yaml('parametros_computo_anual.yaml')
             self._cache['indices_revalorizacion'] = self._cargar_yaml('indices_revalorizacion.yaml')
             self._cache['topes_cotizacion'] = self._cargar_yaml('topes_cotizacion.yaml')
+            self._cache['ipc_anual'] = self._cargar_yaml('ipc_anual.yaml')
         except Exception as e:
             print(f"Error cargando configuraciones: {e}")
             # Inicializar con valores por defecto si hay error
             self._cache = {
                 'parametros_computo': {},
                 'indices_revalorizacion': {},
-                'topes_cotizacion': {}
+                'topes_cotizacion': {},
+                'ipc_anual': {}
             }
     
     def _cargar_yaml(self, nombre_archivo: str) -> Dict[str, Any]:
@@ -61,6 +63,8 @@ class ConfigManager:
                 return datos.get('indices_revalorizacion', datos)
             elif nombre_archivo == 'topes_cotizacion.yaml':
                 return datos.get('topes_cotizacion', datos)
+            elif nombre_archivo == 'ipc_anual.yaml':
+                return datos.get('ipc_anual', datos)
             else:
                 return datos
                 
@@ -94,6 +98,15 @@ class ConfigManager:
             Dict con topes indexados por año
         """
         return self._cache.get('topes_cotizacion', {})
+    
+    def cargar_ipc_anual(self) -> Dict[int, float]:
+        """
+        Carga los índices IPC anuales históricos.
+        
+        Returns:
+            Dict con IPC indexados por año
+        """
+        return self._cache.get('ipc_anual', {})
     
     def reload(self):
         """Recarga todas las configuraciones desde los archivos."""
