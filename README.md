@@ -11,6 +11,7 @@ API profesional para extraer bases de cotización de PDFs y calcular base regula
 - 🔄 **Doble cálculo**: Reforma RD 2/2023 vs Prereforma (elige el más favorable)
 - 🏢 **Múltiples regímenes**: General y Autónomo
 - 👥 **Manejo de lagunas** diferenciado por sexo según DT 41ª
+- 📊 **Revalorización dinámica con IPC**: Cálculo conforme a normativa LGSS (ver [REVALORIZACION_BASES.md](REVALORIZACION_BASES.md))
 
 ## 📊 Endpoints Principales
 
@@ -160,6 +161,25 @@ print(f"Extraídas {len(bases)} bases de cotización")
 2. **Asesorías laborales** - Automatizar cálculos de clientes
 3. **Gestorías** - Procesar múltiples PDFs automáticamente
 4. **Plataformas financieras** - Estimaciones de pensiones
+
+## 📚 Documentación Técnica Adicional
+
+- **[REVALORIZACION_BASES.md](REVALORIZACION_BASES.md)**: Sistema de revalorización dinámica con IPC según normativa española
+- **[scripts/ejemplo_revalorizacion.py](scripts/ejemplo_revalorizacion.py)**: Ejemplos prácticos de uso del sistema de revalorización
+
+### ✨ Novedad: Sistema de Revalorización Dinámico
+
+Este sistema ahora implementa el **método correcto de revalorización** según la Ley General de la Seguridad Social (LGSS):
+
+- ✅ Cálculo dinámico basado en **IPC acumulado**
+- ✅ Actualización automática año tras año
+- ✅ Conforme al Real Decreto Legislativo 8/2015
+- ✅ Transparente y auditable
+
+**Antes**: Índices estáticos precalculados (~12,000 valores)  
+**Ahora**: Cálculo dinámico desde IPCs anuales (~25 valores/año)
+
+Ver documentación completa en [REVALORIZACION_BASES.md](REVALORIZACION_BASES.md)
 
 ## 🔐 Seguridad
 

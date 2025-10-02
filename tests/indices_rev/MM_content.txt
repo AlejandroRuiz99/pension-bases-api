@@ -1,0 +1,278 @@
+
+--- PÁGINA 1 ---
+DOBLE CÁLCULO DE LA BASE REGULADORA POR EL RD 2/2023.
+- CÁLCULO DE LA BASE REGULADORA CON 308 MESES DESCARTANDO 4 PEORES
+- CÁLCULO DE LA BASE REGULADORA CON 300 MESES (25 AÑOS)
+El descarte se realizará una vez se hayan revalorizado las bases en aquellos meses que no
+estén excluidos de dicha revalorización
+Modalidad de jubilación: Jubilación
+Empresa: COMPROMISO LEGAL
+Titular: CAMINO TOVAR HERNANDEZ
+DNI/NIE: 09279872Q
+Fecha nacimiento: 11/10/1960
+Fecha jubilación: 11/10/2027
+Régimen que resuelve: General
+Edad real en la fecha jubilación: 67 años y 0 meses
+Cotización: 15 años y 176 meses
+Base reguladora: Se asigna cálculo con 304 meses
+Reducción por ser menor de 65 años: No
+Factor de revalorización: 2%
+Carencia específica exigida: 730 días
+Carencia especifica acredita: 5477 días
+Carencia genérica exigida: 5475 días
+Días en situación de alta: 10856 días
+Días reales de alta: 10856 días
+Días subsidio mayores de 52 años: 0 días
+Resultados
+Total bases sin revalorizar: 71.248,08 €
+Total bases con revalorización: 770.696,66 €
+Base reguladora: 2.405,56 €
+Base reguladora reforma 2023: 2.413,43 €
+Porcentaje aplicable: 83,44 %
+Pensión ordinaria : 2.013,77 €
+Cálculo de pensiones - 29/09/2025 - 1/10
+
+--- PÁGINA 2 ---
+INFORMACIÓN GENERAL
+Esta simulación tiene un caracter exclusivamente informativo, por lo que no genera derechos
+ni expectativas a su favor ni a favor de terceros.
+- Fecha de jubilación ordinaria con los parámetros introducidos : 11/10/2027
+Edad real en la fecha ordinaria : 67 años y 0 meses y 0 días
+(Puede haber un pequeño descuadre de uno o dos días, teniendo en cuenta que la Seguridad Social interpreta los años de 365 días, y los
+meses de 30.466 días.)
+- Fecha de jubilación solicitada : 11/10/2027
+Edad real en la fecha solicitada : 67 años y 0 meses
+- Régimen resuelve: General
+Esta simulación es un cálculo aproximado. El periodo estimado representa un 7.46% de esta
+simulación. (El % indica el número de bases estimadas)
+La cuantía de su pensión puede minorarse en el caso de que perciba otras pensiones, de
+manera que la suma de las mismas no supere el importe máximo para las pensiones públicas,
+fijado en cada momento. De manera orientativa, para el ejercicio 2027 la cuantía estimada de
+la pensión máxima es de 3407.28 aplicando un factor de revalorización de 2%, si bien en su
+caso resultará de aplicación el límite máximo que esté en vigor el año en que se cause la
+pensión.
+Cotizaciones acreditadas
+Durante toda la vida laboral. 10.856 días
+Durante los últimos 15 años (carencia especifica). 5.477 días
+Bonificaciones aplicadas
+A la carencia por partos. 0 días
+A la edad (por desempeñar trabajos penosos, por discapacidad/movilidad 0 días
+reducida).
+A la cotización.
+Por partos, por cuidado de hijos, por desempeñar trabajos penosos, 0 días
+por discapacidad/movilidad reducida
+Base Reguladora
+Periodos de bases de cotización para el cálculo de 1/2002 a 8/2027
+Base Reguladora 2.405,56 €
+Base Reguladora reforma RD 2/2023 2.413,43 €
+Base reguladora que se asigna: Se asigna cálculo con 304 meses
+Porcentajes aplicados
+Cálculo de pensiones - 29/09/2025 - 2/10
+
+--- PÁGINA 3 ---
+Por años computables a efectos de porcentaje 83,44 %
+Años computables a efectos de porcentaje 15 años y 176 meses
+Porcentaje por anticipación
+Meses de anticipación 0 meses
+Porcentaje reductor por anticipación 100 %
+(Un 100% indica que no se realiza ninguna penalización)
+Porcentaje por demora
+Años de demora 0 años
+(a partir del 1/4/2025 las fracciones de medio año se bonifican a partir del segundo año)
+Complementos aplicados
+Complemento reducción de la brecha de género 0 €
+Observaciones
+Lo dispuesto en el apartado 2 de esta disposición transitoria en relación con el segundo
+párrafo del artículo 210.3 de esta ley sólo resultará de aplicación en la medida en que la
+evolución de la pensión máxima del sistema absorba completamente el efecto del aumento de
+coeficientes respecto a los vigentes en 2021 para aquellos trabajadores con base reguladora
+superior a la pensión máxima, de manera que la pensión reconocida no resulte en ningún
+caso inferior a la que habría correspondido con la aplicación de las normas vigentes en 2021.
+Las bases de cotización futuras empleadas para el cálculo de la pensión han sido
+incrementadas por el porcentaje indicado en la pantalla de introducción de datos o en caso de
+no informar ningún valor en un porcentaje del 2,00% para los años siguientes, en aplicación
+del objetivo de inflación del Banco Central Europeo.
+Finalmente, se le informa que las pensiones de jubilación están sujetas al impuesto sobre la
+renta de las personas físicas, cuya liquidación se practica mediante retenciones a cuenta
+sobre el importe mensual de la pensión. El tipo de retención se determina en función de la
+situación personal y familiar a efectos fiscales del pensionista y teniendo en cuenta asimismo
+el importe a percibir en el ejercicio del que se trate. Por ello, si la pensión se causa una vez
+iniciado el ejercicio es muy probable que, en el siguiente año, el tipo de retención varíe.
+Cálculo de pensiones - 29/09/2025 - 3/10
+
+--- PÁGINA 4 ---
+Detalle del cálculo
+Días cotizados:
+Días en los que ha estado de alta: 10.856,00
+Horas trabajadas:
+Horas trabajadas entre: 02/11/1988 y 27/01/1989 = 696,00
+Horas trabajadas entre: 15/02/1989 y 15/06/1991 = 6.808,00
+Horas trabajadas entre: 16/08/2000 y 31/12/2025 = 74.152,00
+Horas trabajadas entre: 01/01/2026 y 11/10/2027 = 5.192,00
+Días enteros totales trabajados = 10856
+Fecha inicio cotización: 02/11/1988
+Meses cotizados introducidos: 356
+Jubilado en 2027 ==> Min años coti: 38, meses: 6 ==> Cotizado introducido (años): 29,
+meses: 8
+Edad min: 67, meses 0 ==> Edad años: 67, meses: 0
+Coeficiente parcialidad (únicamente a nivel informativo):1
+Días reales de alta:10.856,00
+Días en situación de alta (independientemente de la duración de la jornada):10.856,00
+Tope máximo de pensión RD2/2023 se aplica un 0.115/año por encima del factor de
+ravalorización desde 2025 = 3407.28
+Reforma 2/2023.
+Al ser un cálculo posterior al 31-12-2025, se asignará la base reguladora más alta de las dos
+posibles:
+- Base reguladora con 300 meses de bases = 2405.56
+- Base reguladora con 304 meses = 2413.43
+Se asigna cálculo con 304 meses
+Años cotizados totales = 29.74 años
+Años cotizados a la edad legal de jubilación = 29.74 años
+Edad ==> 67 años y 0 meses
+Año jubilación ==> 2027
+Cuando podria jubilarse => con 67 y 0 meses
+Aplicado sobre ==> base
+Años cotizados ==> 29.74
+( ( 83.44 ) * 2413.43 ) / 100 = 2013.77 €
+Cálculo de pensiones - 29/09/2025 - 4/10
+
+--- PÁGINA 5 ---
+Períodos laborales
+Fecha alta Fecha baja Horas día Régimen Empresa Días alta Días reales
+02/11/1988 27/01/1989 8 General empresa 86 86
+15/02/1989 15/06/1991 8 General empresa 850 850
+16/08/2000 31/12/2025 8 General empresa 9268 9268
+01/01/2026 11/10/2027 8 General empresa 648 648
+En caso de haber pluriempleo o pluriactividad la suma de los días de alta no coincidirán con los días cotizados ya que se superpondrán esos
+días que coincidan en más de un periodo, esos días se mostrarán en Días pluriempleo.
+Cálculo de pensiones - 29/09/2025 - 5/10
+
+--- PÁGINA 6 ---
+PERÍODO SIN REVALORIZACIÓN
+Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval
+Ago - 27 2.968,67 - - Jul - 27 2.968,67 - - Jun - 27 2.968,67 - -
+May - 27 2.968,67 - - Abr - 27 2.968,67 - - Mar - 27 2.968,67 - -
+Feb - 27 2.968,67 - - Ene - 27 2.968,67 - - Dic - 26 2.968,67 - -
+Nov - 26 2.968,67 - - Oct - 26 2.968,67 - - Sep - 26 2.968,67 - -
+Ago - 26 2.968,67 - - Jul - 26 2.968,67 - - Jun - 26 2.968,67 - -
+May - 26 2.968,67 - - Abr - 26 2.968,67 - - Mar - 26 2.968,67 - -
+Feb - 26 2.968,67 - - Ene - 26 2.968,67 - - Dic - 25 2.968,67 - -
+Nov - 25 2.968,67 - - Oct - 25 2.968,67 - - Sep - 25 2.968,67 - -
+PERÍODO CON REVALORIZACIÓN
+Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval
+Ago - 25 2.968,67 1 2.968,67 Jul - 25 2.968,67 1.0016585 2.973,59 Jun - 25 2.968,67 1.0009001 2.971,34
+May - 25 2.968,67 1.0075967 2.991,22 Abr - 25 2.927,26 1.0082798 2.951,50 Mar - 25 2.927,26 1.0146170 2.970,05
+Feb - 25 2.873,10 1.0152144 2.916,81 Ene - 25 2.803,11 1.0191976 2.856,92 Dic - 24 2.880,45 1.0209380 2.940,76
+Nov - 24 2.903,34 1.0255495 2.977,52 Oct - 24 2.957,50 1.0280662 3.040,51 Sep - 24 2.957,50 1.0344755 3.059,46
+Ago - 24 2.957,50 1.0282351 3.041,01 Jul - 24 3.250,54 1.0286529 3.343,68 Jun - 24 2.850,14 1.0237669 2.917,88
+May - 24 2.850,14 1.0276223 2.928,87 Abr - 24 2.850,14 1.0303276 2.936,58 Mar - 24 2.854,60 1.0374976 2.961,64
+Feb - 24 2.985,02 1.0454014 3.120,54 Ene - 24 2.806,24 1.0491164 2.944,07 Dic - 23 2.986,50 1.0500052 3.135,84
+Nov - 23 2.766,85 1.0502648 2.905,93 Oct - 23 2.819,43 1.0466061 2.950,83 Sep - 23 2.819,43 1.0496347 2.959,37
+Ago - 23 2.819,43 1.0514807 2.964,58 Jul - 23 2.819,43 1.0571332 2.980,51 Jun - 23 2.819,43 1.0589209 2.985,55
+May - 23 2.819,43 1.0649492 3.002,55 Abr - 23 2.819,43 1.0644347 3.001,10 Mar - 23 2.819,43 1.0707670 3.018,95
+Feb - 23 2.819,43 1.0747134 3.030,08 Ene - 23 3.268,58 1.0848561 3.545,94 Dic - 22 2.723,82 1.0825758 2.948,74
+Nov - 22 2.673,27 1.0842036 2.898,37 Oct - 22 2.723,82 1.0829009 2.949,63 Sep - 22 2.723,82 1.0865403 2.959,54
+Cálculo de pensiones - 29/09/2025 - 6/10
+
+--- PÁGINA 7 ---
+Ago - 22 2.723,82 1.0789824 2.938,95 Jul - 22 2.708,82 1.0817194 2.930,18 Jun - 22 2.708,82 1.0789628 2.922,72
+May - 22 2.708,82 1.0989451 2.976,84 Abr - 22 2.708,82 1.1080232 3.001,44 Mar - 22 2.708,82 1.1060558 2.996,11
+Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval
+Feb - 22 2.708,82 1.1395649 3.086,88 Ene - 22 2.683,94 1.1487636 3.083,21 Dic - 21 2.660,85 1.1443658 3.044,99
+Nov - 21 2.611,29 1.1580330 3.023,96 Oct - 21 2.660,85 1.1615718 3.090,77 Sep - 21 2.660,85 1.1829381 3.147,62
+Ago - 21 2.660,85 1.1928055 3.173,88 Jul - 21 2.611,24 1.1982234 3.128,85 Jun - 21 2.611,24 1.1891929 3.105,27
+May - 21 2.611,24 1.1948539 3.120,05 Abr - 21 2.611,24 1.2004843 3.134,75 Mar - 21 2.611,24 1.2146525 3.171,75
+Feb - 21 2.611,24 1.2264349 3.202,52 Ene - 21 2.585,26 1.2192082 3.151,97 Dic - 20 2.585,31 1.2193207 3.152,32
+Nov - 20 2.536,24 1.2219129 3.099,06 Oct - 20 2.585,31 1.2239116 3.164,19 Sep - 20 2.585,31 1.2303412 3.180,81
+Ago - 20 2.585,31 1.2321889 3.185,59 Jul - 20 2.585,31 1.2327506 3.187,04 Jun - 20 2.585,31 1.2216871 3.158,44
+May - 20 2.585,31 1.2273205 3.173,00 Abr - 20 2.585,31 1.2272445 3.172,81 Mar - 20 2.585,31 1.2309522 3.182,39
+Feb - 20 2.585,31 1.2262326 3.170,19 Ene - 20 2.559,16 1.2247809 3.134,41 Dic - 19 2.566,12 1.2128323 3.112,27
+Nov - 19 2.518,01 1.2119551 3.051,72 Oct - 19 2.566,12 1.2140080 3.115,29 Sep - 19 2.566,12 1.2257904 3.145,53
+Ago - 19 2.566,12 1.2257904 3.145,53 Jul - 19 2.566,12 1.2251088 3.143,78 Jun - 19 2.537,41 1.2175114 3.089,33
+May - 19 2.537,41 1.2160802 3.085,69 Abr - 19 2.537,41 1.2184466 3.091,70 Mar - 19 2.537,41 1.2307358 3.122,88
+Feb - 19 2.728,47 1.2351951 3.370,19 Ene - 19 2.509,93 1.2382161 3.107,84 Dic - 18 2.506,95 1.2223900 3.064,47
+Nov - 18 2.460,24 1.2169012 2.993,87 Oct - 18 2.530,41 1.2155708 3.075,89 Sep - 18 2.483,49 1.2268143 3.046,78
+Ago - 18 2.506,95 1.2298071 3.083,06 Jul - 18 2.463,04 1.2315639 3.033,39 Jun - 18 2.416,15 1.2227292 2.954,30
+May - 18 2.416,15 1.2259294 2.962,03 Abr - 18 2.416,15 1.2369802 2.988,73 Mar - 18 2.416,15 1.2471984 3.013,42
+Feb - 18 2.416,15 1.2486644 3.016,96 Ene - 18 2.392,22 1.2503441 2.991,10 Dic - 17 2.445,78 1.2368645 3.025,10
+Nov - 17 2.445,78 1.2374177 3.026,45 Oct - 17 2.399,54 1.2430676 2.982,79 Sep - 17 2.445,78 1.2545368 3.068,32
+Ago - 17 2.445,78 1.2567233 3.073,67 Jul - 17 2.396,85 1.2592239 3.018,17 Jun - 17 2.402,05 1.2505413 3.003,86
+May - 17 2.396,85 1.2510804 2.998,65 Abr - 17 2.396,85 1.2503310 2.996,86 Mar - 17 2.396,85 1.2623370 3.025,63
+Feb - 17 2.396,85 1.2620691 3.024,99 Ene - 17 2.396,85 1.2575336 3.014,12 Dic - 16 2.460,10 1.2506201 3.076,65
+Nov - 16 2.414,31 1.2580256 3.037,26 Oct - 16 2.394,39 1.2625915 3.023,14 Sep - 16 2.460,10 1.2770246 3.141,61
+Ago - 16 2.460,10 1.2770794 3.141,74 Jul - 16 2.460,10 1.2787265 3.145,80 Jun - 16 2.372,52 1.2694215 3.011,73
+May - 16 2.372,52 1.4283964 3.388,90 Abr - 16 2.372,52 1.2822546 3.042,17 Mar - 16 2.372,52 1.2912447 3.063,50
+Cálculo de pensiones - 29/09/2025 - 7/10
+
+--- PÁGINA 8 ---
+Feb - 16 2.345,55 1.2995237 3.048,10 Ene - 16 2.345,09 1.2949410 3.036,75 Dic - 15 2.409,86 1.2702347 3.061,09
+Nov - 15 2.364,53 1.2665296 2.994,75 Oct - 15 2.409,86 1.2711576 3.063,31 Sep - 15 2.409,86 1.2793040 3.082,94
+Ago - 15 2.409,86 1.2753682 3.073,46 Jul - 15 2.367,24 1.2711304 3.009,07 Jun - 15 2.411,09 1.2593306 3.036,36
+Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval Mes/Año BASE Índice BaseReval
+May - 15 2.323,39 1.2626987 2.933,74 Abr - 15 2.308,03 1.2687312 2.928,27 Mar - 15 2.467,63 1.2803917 3.159,53
+Feb - 15 2.279,67 1.2885596 2.937,49 Ene - 15 2.279,22 1.2912167 2.942,97 Dic - 14 2.302,80 1.2704653 2.925,63
+Nov - 14 2.257,92 1.2630606 2.851,89 Oct - 14 2.302,80 1.2621762 2.906,54 Sep - 14 2.302,80 1.2680550 2.920,08
+Ago - 14 2.302,80 1.2699907 2.924,53 Jul - 14 2.302,80 1.2720002 2.929,16 Jun - 14 2.302,80 1.2600374 2.901,61
+May - 14 2.302,80 1.2603845 2.902,41 Abr - 14 2.302,80 1.2606783 2.903,09 Mar - 14 2.279,23 1.2718914 2.898,93
+Feb - 14 2.279,23 1.2747259 2.905,39 Ene - 14 2.256,65 1.2741799 2.875,38 Dic - 13 2.355,03 1.2572279 2.960,81
+Nov - 13 2.310,59 1.2583582 2.907,55 Oct - 13 2.355,03 1.2609723 2.969,63 Sep - 13 2.234,75 1.2660983 2.829,41
+Ago - 13 2.234,75 1.2637314 2.824,12 Jul - 13 2.234,75 1.2676632 2.832,91 Jun - 13 2.234,75 1.2611193 2.818,29
+May - 13 2.234,75 1.2629802 2.822,45 Abr - 13 2.234,75 1.2653039 2.827,64 Mar - 13 2.234,75 1.2700313 2.838,20
+Feb - 13 2.190,31 1.2745074 2.791,57 Ene - 13 2.213,87 1.2767094 2.826,47 Dic - 12 2.294,54 1.2603979 2.892,03
+Nov - 12 2.354,79 1.2612797 2.970,05 Oct - 12 2.335,33 1.2597172 2.941,86 Sep - 12 2.278,79 1.2704246 2.895,03
+Ago - 12 2.213,70 1.2829321 2.840,03 Jul - 12 2.126,05 1.2901525 2.742,93 Jun - 12 1.900,26 1.2871377 2.445,90
+May - 12 1.900,26 1.2847331 2.441,33 Abr - 12 1.776,58 1.2828353 2.279,06 Mar - 12 1.837,84 1.3008594 2.390,77
+Feb - 12 1.837,84 1.3096084 2.406,85 Ene - 12 1.837,84 1.3109649 2.409,34 Dic - 11 1.975,31 1.2965497 2.561,09
+Nov - 11 1.975,31 1.2982333 2.564,41 Oct - 11 1.975,31 1.3034961 2.574,81 Sep - 11 1.837,84 1.3137733 2.414,51
+Ago - 11 1.837,84 1.3169873 2.420,41 Jul - 11 1.837,84 1.3186221 2.423,42 Jun - 11 1.837,84 1.3115429 2.410,41
+May - 11 1.837,84 1.3096949 2.407,01 Abr - 11 1.837,84 1.3092625 2.406,22 Mar - 11 1.837,84 1.3255565 2.436,16
+Feb - 11 1.837,84 1.3354660 2.454,37 Ene - 11 1.837,84 1.3371621 2.457,49 Dic - 10 1.837,84 1.3273755 2.439,50
+Nov - 10 1.837,84 1.3355260 2.454,48 Oct - 10 2.102,39 1.3427762 2.823,04 Sep - 10 1.837,84 1.3550415 2.490,35
+Ago - 10 1.837,84 1.3559835 2.492,08 Jul - 10 1.837,84 1.3594076 2.498,37 Jun - 10 1.837,84 1.3533152 2.487,18
+May - 10 1.837,84 1.3557363 2.491,63 Abr - 10 1.837,84 1.3587400 2.497,15 Mar - 10 1.837,84 1.3732152 2.523,75
+Feb - 10 1.837,84 1.3834025 2.542,47 Ene - 10 1.837,84 1.3808816 2.537,84 Dic - 09 1.837,84 1.3670301 2.512,38
+Nov - 09 2.194,25 1.3666846 2.998,85 Oct - 09 1.837,84 1.3740875 2.525,35 Sep - 09 1.837,84 1.3838852 2.543,36
+Cálculo de pensiones - 29/09/2025 - 8/10
+
+--- PÁGINA 9 ---
+Ago - 09 1.837,84 1.3806252 2.537,37 Jul - 09 1.796,88 1.3854484 2.489,48 Jun - 09 1.796,88 1.3736116 2.468,22
+May - 09 1.796,88 1.3796646 2.479,09 Abr - 09 1.796,88 1.3791848 2.478,23 Mar - 09 1.796,88 1.3926489 2.502,42
+Feb - 09 1.796,88 1.3949349 2.506,53 Ene - 09 1.796,88 1.3950821 2.506,80 Dic - 08 1.796,88 1.3778910 2.475,90
+Nov - 08 2.097,28 1.3708261 2.875,01 Oct - 08 1.796,88 1.3650068 2.452,75 Sep - 08 1.796,88 1.3697056 2.461,20
+Ago - 08 1.796,88 1.3694218 2.460,69 Jul - 08 1.796,88 1.3664806 2.455,40 Jun - 08 1.796,88 1.3599204 2.443,61
+May - 08 1.796,88 1.3677530 2.457,69 Abr - 08 1.796,88 1.3769820 2.474,27 Mar - 08 1.796,88 1.3918017 2.500,90
+Feb - 08 1.796,88 1.4041543 2.523,10 Ene - 08 1.796,88 1.4063453 2.527,03 Dic - 07 2.025,55 1.3976387 2.830,99
+Nov - 07 1.724,44 1.4034918 2.420,24 Oct - 07 1.724,44 1.4135468 2.437,58 Sep - 07 1.724,44 1.4318690 2.469,17
+Ago - 07 1.724,44 1.4365717 2.477,28 Jul - 07 1.724,44 1.4385519 2.480,70 Jun - 07 1.724,44 1.4280707 2.462,62
+May - 07 1.724,44 1.4306981 2.467,15 Abr - 07 1.724,44 1.4346316 2.473,94 Mar - 07 1.724,44 1.4544498 2.508,11
+Feb - 07 1.724,44 1.4654858 2.527,14 Ene - 07 1.724,44 1.4664793 2.528,86 Dic - 06 1.679,10 1.4566223 2.445,81
+Nov - 06 1.782,92 1.4606101 2.604,15 Oct - 06 1.679,10 1.4642232 2.458,58 Sep - 06 1.679,10 1.4702305 2.468,66
+Ago - 06 1.679,10 1.4678181 2.464,61 Jul - 06 1.640,82 1.4708122 2.413,34 Jun - 06 1.640,82 1.4620640 2.398,98
+May - 06 1.640,82 1.4642773 2.402,62 Abr - 06 1.640,82 1.4695586 2.411,28 Mar - 06 1.640,82 1.4902859 2.445,29
+Feb - 06 1.640,82 1.5008325 2.462,60 Ene - 06 1.640,82 1.5015523 2.463,78 Dic - 05 1.582,28 1.4954560 2.366,23
+Nov - 05 1.719,19 1.4986773 2.576,51 Oct - 05 1.694,38 1.5009461 2.543,17 Sep - 05 1.582,28 1.5131443 2.394,22
+Ago - 05 1.582,28 1.5224384 2.408,92 Jul - 05 1.582,28 1.5291305 2.419,51 Jun - 05 1.582,28 1.5197741 2.404,71
+May - 05 1.582,28 1.5233156 2.410,31 Abr - 05 1.582,28 1.5262273 2.414,92 Mar - 05 1.582,28 1.5482133 2.449,71
+Feb - 05 1.582,28 1.5604580 2.469,08 Ene - 05 1.582,28 1.5645004 2.475,48 Dic - 04 1.812,55 1.5513221 2.811,85
+Nov - 04 1.533,22 1.5498065 2.376,19 Oct - 04 1.533,22 1.5536924 2.382,15 Sep - 04 1.547,11 1.5696606 2.428,44
+Ago - 04 1.533,22 1.5724613 2.410,93 Jul - 04 1.533,22 1.5794127 2.421,59 Jun - 04 1.533,22 1.5674272 2.403,21
+May - 04 1.533,22 1.5699092 2.407,02 Abr - 04 1.533,22 1.5791611 2.421,20 Mar - 04 1.533,22 1.6007911 2.454,37
+Feb - 04 1.533,22 1.6119609 2.471,49 Ene - 04 1.533,22 1.6127038 2.472,63 Dic - 03 1.493,67 1.6013944 2.391,95
+Nov - 03 1.547,67 1.6041366 2.482,67 Oct - 03 1.493,67 1.6093661 2.403,86 Sep - 03 1.493,67 1.6202148 2.420,07
+Ago - 03 1.493,67 1.6250392 2.427,27 Jul - 03 1.458,82 1.6325091 2.381,54 Jun - 03 1.458,82 1.6222694 2.366,60
+May - 03 1.458,82 1.6233541 2.368,18 Abr - 03 1.458,82 1.6218493 2.365,99 Mar - 03 1.458,82 1.6350443 2.385,24
+Feb - 03 1.458,82 1.6463799 2.401,77 Ene - 03 1.458,82 1.6498731 2.406,87 Dic - 02 1.736,25 1.6430830 2.852,80
+Nov - 02 1.736,25 1.6485471 2.862,29 Oct - 02 1.736,25 1.6510866 2.866,70 Sep - 02 1.736,25 1.6674468 2.895,10
+Ago - 02 1.736,25 1.6736864 2.905,94 Jul - 02 1.736,25 1.6784797 2.914,26 Jun - 02 1.736,25 1.6668394 2.894,05
+Cálculo de pensiones - 29/09/2025 - 9/10
+
+--- PÁGINA 10 ---
+May - 02 1.736,25 1.6669095 2.894,17 Abr - 02 1.736,25 1.6729098 2.904,59 Mar - 02 1.736,25 1.6956317 2.944,04
+Feb - 02 1.736,25 1.7096421 2.968,37 Ene - 02 1.736,25 1.7111175 2.970,93
+Listado de los 4 meses descartados de los 308 recopilados para el cálculo de la base reguladora. La base a comparar será la revalorizada,
+menos en las 24 últimas mensualidades (las más cercanas al hecho causante) que no deben revalorizarse en ningún caso.
+Mes/Año descartado Base revalorizada Mes/Año descartado Base revalorizada
+Jun - 2003 2.366,60 Dic - 2005 2.366,23
+Abr - 2003 2.365,99 Abr - 2012 2.279,06
+Cálculo de pensiones - 29/09/2025 - 10/10
+Powered by TCPDF (www.tcpdf.org)

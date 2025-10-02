@@ -1,0 +1,40 @@
+# Índices de Precios al Consumo (IPC) anuales de España
+# Fuente: Instituto Nacional de Estadística (INE)
+# Valores expresados como porcentaje de variación interanual
+# Estos valores se utilizan para revalorizar las bases de cotización
+
+ipc_anual:
+  # Datos históricos desde 2000
+  2000: 3.4
+  2001: 3.6
+  2002: 3.1
+  2003: 3.0
+  2004: 3.0
+  2005: 3.4
+  2006: 3.5
+  2007: 2.8
+  2008: 4.1
+  2009: -0.3
+  2010: 1.8
+  2011: 3.2
+  2012: 2.4
+  2013: 1.4
+  2014: -0.2
+  2015: -0.5
+  2016: -0.2
+  2017: 2.0
+  2018: 1.7
+  2019: 0.7
+  2020: -0.5
+  2021: 3.1
+  2022: 8.4
+  2023: 3.5
+  2024: 2.8
+  2025: 2.5  # Estimado
+
+# Notas:
+# - Según el Real Decreto Legislativo 8/2015 (LGSS), las bases de cotización
+#   se revalorizan aplicando el IPC desde el año de cotización hasta dos años
+#   antes del año de jubilación
+# - El cálculo es acumulativo: se multiplican (1 + IPC/100) de cada año
+# - Las bases de los últimos 24 meses NO se revalorizan
