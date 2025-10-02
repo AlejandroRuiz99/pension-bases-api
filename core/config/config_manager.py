@@ -23,7 +23,6 @@ class ConfigManager:
         """Carga todas las configuraciones desde archivos YAML."""
         try:
             self._cache['parametros_computo'] = self._cargar_yaml('parametros_computo_anual.yaml')
-            self._cache['indices_revalorizacion'] = self._cargar_yaml('indices_revalorizacion.yaml')
             self._cache['topes_cotizacion'] = self._cargar_yaml('topes_cotizacion.yaml')
             self._cache['ipc_anual'] = self._cargar_yaml('ipc_anual.yaml')
         except Exception as e:
@@ -31,7 +30,6 @@ class ConfigManager:
             # Inicializar con valores por defecto si hay error
             self._cache = {
                 'parametros_computo': {},
-                'indices_revalorizacion': {},
                 'topes_cotizacion': {},
                 'ipc_anual': {}
             }
@@ -59,8 +57,6 @@ class ConfigManager:
             # Manejar estructuras anidadas según el tipo de archivo
             if nombre_archivo == 'parametros_computo_anual.yaml':
                 return datos.get('parametros_computo_anual', datos)
-            elif nombre_archivo == 'indices_revalorizacion.yaml':
-                return datos.get('indices_revalorizacion', datos)
             elif nombre_archivo == 'topes_cotizacion.yaml':
                 return datos.get('topes_cotizacion', datos)
             elif nombre_archivo == 'ipc_anual.yaml':
@@ -81,14 +77,6 @@ class ConfigManager:
         """
         return self._cache.get('parametros_computo', {})
     
-    def cargar_indices_revalorizacion(self) -> Dict[str, float]:
-        """
-        Carga los índices de revalorización.
-        
-        Returns:
-            Dict con índices indexados por "mm/yyyy"
-        """
-        return self._cache.get('indices_revalorizacion', {})
     
     def cargar_topes_cotizacion(self) -> Dict[int, Dict[str, float]]:
         """

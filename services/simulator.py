@@ -48,7 +48,6 @@ class SimuladorPeriodos:
         
         # Cargar configuraciones (antes de procesar bases para pluriactividad)
         self.parametros_computo = config.cargar_parametros_computo()
-        self.indices_revalorizacion = config.cargar_indices_revalorizacion()  # DEPRECATED: Solo para compatibilidad
         self.topes_cotizacion = config.cargar_topes_cotizacion()
         self.ipc_anual = config.cargar_ipc_anual()  # Nuevo: IPCs anuales para cálculo dinámico
         
