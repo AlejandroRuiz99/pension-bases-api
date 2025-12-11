@@ -77,9 +77,19 @@ class ExtractorBases:
                     contexto[CLAVE_EMPRESA] = EMPRESA_NO_IDENTIFICADA
             except Exception as e:
                 contexto[CLAVE_EMPRESA] = EMPRESA_NO_IDENTIFICADA
-        elif TEXTO_AUTONOMOS in linea:
+        elif TEXTO_AUTONOMOS in linea or "AUTONOMO" in linea.upper():
+            # Detectar variantes: AUTÓNOMOS, AUTONOMO, TRABAJADOR AUTONOMO, etc.
             contexto[CLAVE_REGIMEN] = REGIMEN_AUTONOMOS
-            contexto[CLAVE_EMPRESA] = EMPRESA_AUTONOMO
+            # Extraer nombre de empresa si está presente
+            if TEXTO_EMPRESA_RAZON_SOCIAL in linea:
+                partes = linea.split(TEXTO_EMPRESA_RAZON_SOCIAL)
+                if len(partes) > 1:
+                    empresa_parte = partes[1].strip()
+                    contexto[CLAVE_EMPRESA] = empresa_parte if empresa_parte else EMPRESA_AUTONOMO
+                else:
+                    contexto[CLAVE_EMPRESA] = EMPRESA_AUTONOMO
+            else:
+                contexto[CLAVE_EMPRESA] = EMPRESA_AUTONOMO
 
     @staticmethod
     def _procesar_linea_bases(linea: str, contexto: dict) -> List[BaseCotizacion]:

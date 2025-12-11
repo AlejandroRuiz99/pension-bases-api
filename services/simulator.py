@@ -9,6 +9,7 @@ from typing import Dict, List
 from dateutil.relativedelta import relativedelta
 from models.bases_cotizacion import BaseCotizacion, BasesCotizacion
 from core.config.config_manager import config
+from core.config.config_manager import config
 
 
 class SimuladorPeriodos:
@@ -48,7 +49,6 @@ class SimuladorPeriodos:
         
         # Cargar configuraciones (antes de procesar bases para pluriactividad)
         self.parametros_computo = config.cargar_parametros_computo()
-        self.indices_revalorizacion = config.cargar_indices_revalorizacion()  # DEPRECATED: Solo para compatibilidad
         self.topes_cotizacion = config.cargar_topes_cotizacion()
         self.ipc_anual = config.cargar_ipc_anual()  # Nuevo: IPCs anuales para cálculo dinámico
         
@@ -57,6 +57,9 @@ class SimuladorPeriodos:
         
         # Cargar bases de cotización (después de cargar configuraciones)
         self.bases = self._procesar_bases_extraidas(bases_extraidas)
+        
+        # VALIDACIÓN CRÍTICA: Verificar que las bases extraídas llegan hasta cerca de la jubilación
+        self._validar_coherencia_fechas()
         
         # Obtener parámetros de cómputo para el año de jubilación
         self.parametros_año_jubilacion = self.get_parametros_computo()
@@ -101,14 +104,20 @@ class SimuladorPeriodos:
         """
         Procesa las bases extraídas del JSON, manejando pluriactividad.
         
+        IMPORTANTE: Procesa TODAS las bases extraídas (AUTONOMO + GENERAL),
+        independientemente del régimen de acceso. El sistema debe considerar
+        todo el historial laboral del cotizante.
+        
         Args:
             bases_extraidas: Diccionario con las bases extraídas
             
         Returns:
             Lista de objetos BaseCotizacion validados y agregados
         """
-        # 1. Validar y agrupar bases por mes_anyo
+        # 1. Validar y agrupar bases por mes_anyo (TODAS, sin filtrar por régimen)
         bases_por_mes = {}
+        total_bases_originales = len(bases_extraidas["bases"])
+        
         for base_data in bases_extraidas["bases"]:
             try:
                 # Validar que la base sea positiva
@@ -122,6 +131,7 @@ class SimuladorPeriodos:
                 
             except Exception as e:
                 raise ValueError(f"Error procesando base {base_data}: {str(e)}")
+        
         
         # 2. Procesar cada mes (con o sin pluriactividad)
         bases_procesadas = []
@@ -181,6 +191,36 @@ class SimuladorPeriodos:
             Objeto datetime
         """
         return datetime.strptime(fecha_jubilacion, "%m/%Y")
+    
+    def _validar_coherencia_fechas(self):
+        """
+        Valida que las bases extraídas sean coherentes con la fecha de jubilación.
+        Alerta si hay una brecha sospechosa que indique extracción incompleta.
+        Muestra información desglosada por régimen.
+        """
+        if not self.bases:
+            raise ValueError("No hay bases de cotización para procesar")
+        
+        # Obtener la última base extraída
+        ultima_base = max(self.bases, key=lambda x: datetime.strptime(x.mes_anyo, "%m/%Y"))
+        fecha_ultima_base = datetime.strptime(ultima_base.mes_anyo, "%m/%Y")
+        
+        # Calcular diferencia en meses
+        meses_diferencia = (self.fecha_jubilacion.year - fecha_ultima_base.year) * 12 + \
+                          (self.fecha_jubilacion.month - fecha_ultima_base.month)
+        
+        # Primera base para información
+        primera_base = min(self.bases, key=lambda x: datetime.strptime(x.mes_anyo, "%m/%Y"))
+        
+        # Validar brecha crítica
+        if meses_diferencia > 24:
+            import warnings
+            warnings.warn(
+                f"Brecha de {meses_diferencia} meses entre última base extraída ({ultima_base.mes_anyo}) "
+                f"y fecha de jubilación ({self.fecha_jubilacion.strftime('%m/%Y')}). "
+                f"Se generarán bases simuladas que pueden no reflejar la realidad.",
+                UserWarning
+            )
         
     def get_parametros_computo(self) -> Dict:
         """
@@ -210,6 +250,9 @@ class SimuladorPeriodos:
         Simula bases futuras si faltan bases hasta la fecha de jubilación.
         Utiliza el promedio de los últimos 6 meses.
         
+        IMPORTANTE: Solo simula meses POSTERIORES a la última base extraída del PDF.
+        Nunca debe simular meses que ya tienen bases reales.
+        
         Returns:
             Lista de bases simuladas
         """
@@ -218,9 +261,10 @@ class SimuladorPeriodos:
         if not self.bases:
             return bases_simuladas
             
-        # Obtener la fecha de la última base
+        # Obtener la fecha de la última base REAL extraída del PDF
         ultima_base = max(self.bases, key=lambda x: datetime.strptime(x.mes_anyo, "%m/%Y"))
         fecha_ultima_base = datetime.strptime(ultima_base.mes_anyo, "%m/%Y")
+        
         
         # Si la fecha de jubilación es anterior o igual a la última base, no simular
         if self.fecha_jubilacion <= fecha_ultima_base:
